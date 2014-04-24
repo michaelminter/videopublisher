@@ -1,2 +1,12 @@
-<h1>Landings#index</h1>
-<p>Find me in app/views/landings/index.html.erb</p>
+<a href="/">Video 1</a> / <a href="/video2">Video 2</a> / <a href="/video3">Video 3</a><br /><br />
+
+<video id="vid1" muted="muted" src="" class="video-js vjs-default-skin" controls preload="auto" autoplay="autoplay" loop="loop" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ", "quality": "720p" }'></video>
+
+<%= javascript_include_tag 'application' %>
+<script type="text/javascript">
+  var vid1 = videojs('vid1');
+  vid1.ads();
+  vid1.vast({
+    url: 'http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2'
+  });
+</script>

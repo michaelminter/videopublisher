@@ -1,0 +1,19 @@
+<a href="/">Video 1</a> / <a href="/video2">Video 2</a> / <a href="/video3">Video 3</a><br /><br />
+
+<video id="vid3" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360"></video>
+
+<%= javascript_include_tag 'application' %>
+<script type="text/javascript">
+  var vid3 = videojs('vid3');
+  vid3.ads();
+  vid3.vast({
+    url: 'http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2'
+  });
+
+  videojs('vid3', { "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ" }).ready(function() {
+    // Cue a video using ended event
+    this.one('ended', function() {
+      this.src('http://www.youtube.com/watch?v=jofNR_WkoCE');
+    });
+  });
+</script>

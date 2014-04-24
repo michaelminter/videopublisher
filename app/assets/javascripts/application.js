@@ -10,7 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// require jquery
+// require jquery_ujs
+// require turbolinks
+// require_tree .
+
+// videojs
+//= require video.dev.js
+// require video.js
+
+// videojs youtube plugin
+//= require vjs.youtube.js
+
+// videojs vast plugin
+//= require vast-client.js
+//= require video.ads.js
+//= require videojs.vast.js
