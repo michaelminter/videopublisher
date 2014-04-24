@@ -26,12 +26,12 @@ test:
   password:
   host: localhost
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: heroku_623ee1d3ebb4bb7
-  pool: 5
-  username: b1315ee1df067f
-  password: a2250c2f
-  host: localhost
+#production:
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  database: heroku_623ee1d3ebb4bb7
+#  pool: 5
+#  username: b1315ee1df067f
+#  password: a2250c2f
+#  host: localhost
