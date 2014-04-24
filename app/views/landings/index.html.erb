@@ -1,8 +1,10 @@
 <a href="/">Video 1</a> / <a href="/video2">Video 2</a> / <a href="/video3">Video 3</a><br /><br />
 
-<video id="vid1" muted="muted" src="" class="video-js vjs-default-skin" controls preload="auto" autoplay="autoplay" loop="loop" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ", "quality": "720p" }'></video>
+<video id="vid1" muted="muted" src="" class="video-js vjs-default-skin" controls preload="auto" autoplay="autoplay" loop="loop" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=r2Hlaf6cEQU", "quality": "720p", "poster": "myPoster.jpg" }'>
+</video>
 
 <%= javascript_include_tag 'application' %>
+<% if false %>
 <script type="text/javascript">
   var vid1 = videojs('vid1');
   vid1.ads();
@@ -10,3 +12,4 @@
     url: 'http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2'
   });
 </script>
+<% end %>

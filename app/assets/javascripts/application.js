@@ -15,14 +15,14 @@
 // require turbolinks
 // require_tree .
 
-// videojs
+// VIDEOJS
 //= require video.dev.js
 // require video.js
 
-// videojs youtube plugin
+// VIDEOJS YOUTUBE PLUGIN
 //= require vjs.youtube.js
 
-// videojs vast plugin
+// VIDEOJS VAST PLUGIN
 //= require vast-client.js
 //= require video.ads.js
 //= require videojs.vast.js

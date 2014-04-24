@@ -3,6 +3,7 @@
 <video id="vid2" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ", "ytcontrols": true }'></video>
 
 <%= javascript_include_tag 'application' %>
+<% if false %>
 <script type="text/javascript">
   var vid2 = videojs('vid2');
   vid2.ads();
@@ -10,3 +11,4 @@
     url: 'http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2'
   });
 </script>
+<% end %>
