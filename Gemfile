@@ -45,6 +45,9 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'bundler'
 
+# serve static assets
+gem 'rails_12factor', group: :production
+
 gem 'validates_formatting_of'
 
 group :development do
