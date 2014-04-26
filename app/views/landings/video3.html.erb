@@ -9,13 +9,11 @@
 <script src="/javascripts/video.ads.js?body=1"></script>
 <script src="/javascripts/videojs.vast.js?body=1"></script>
 <script type="text/javascript">
-<% if true %>
   var vid3 = videojs('vid3');
   vid3.ads();
   vid3.vast({
     url: 'http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2'
   });
-<% end %>
   videojs('vid3', { "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ", "poster": "myPoster.jpg" }).ready(function() {
     // Cue a video using ended event
     this.one('ended', function() {
