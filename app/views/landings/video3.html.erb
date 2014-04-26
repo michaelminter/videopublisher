@@ -2,7 +2,12 @@
 
 <video id="vid3" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360"></video>
 
-<%= javascript_include_tag 'application' %>
+<%#= javascript_include_tag 'application' %>
+<script src="/javascripts/video.dev.js?body=1"></script>
+<script src="/javascripts/vjs.youtube.js?body=1"></script>
+<script src="/javascripts/vast-client.js?body=1"></script>
+<script src="/javascripts/video.ads.js?body=1"></script>
+<script src="/javascripts/videojs.vast.js?body=1"></script>
 <script type="text/javascript">
 <% if true %>
   var vid3 = videojs('vid3');
