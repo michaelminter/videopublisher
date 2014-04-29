@@ -10,4 +10,7 @@ class LandingsController < ApplicationController
 
   def video4
   end
+
+  def video5
+  end
 end

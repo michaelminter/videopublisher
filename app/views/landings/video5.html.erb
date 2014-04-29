@@ -1,0 +1,36 @@
+<a href="/">Video 1</a> / <a href="/video2">Video 2</a> / <a href="/video3">Video 3</a> / <a href="/video4">Video 4</a> / <a href="/video5">Video 5</a><br /><br />
+
+<link href="/stylesheets/vast.css" rel="stylesheet" type="text/css">
+<script src="/javascripts/video.dev.js?body=1"></script>
+<script src="/javascripts/vast.js"></script>
+
+<video id="videoplayer" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+</video>
+
+<script type="text/javascript">
+  var options =
+  {
+    'techOrder':
+        [
+          'html5'
+        ],
+    plugins:
+    {
+      vastPlugin:
+      {
+        'ads' :
+            [{
+              'position' : 'pre-roll',
+              'vastTagUrl' : '/vast_demo_ad.xml'
+            },
+              {
+                'position' : 'post-roll',
+                'vastTagUrl' : '/vast_demo_ad.xml'
+              }]
+      }
+    }
+  };
+  _V_("videoplayer", options);
+</script>
