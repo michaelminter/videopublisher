@@ -12,6 +12,7 @@ Videopublisher::Application.routes.draw do
   get 'video3' => 'landings#video3'
   get 'video4' => 'landings#video4'
   get 'video5' => 'landings#video5'
+  get 'video6' => 'landings#video6'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

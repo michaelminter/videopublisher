@@ -2,11 +2,12 @@
 
 <link href="/stylesheets/vast.css" rel="stylesheet" type="text/css">
 <script src="/javascripts/video.dev.js?body=1"></script>
+<script src="/javascripts/youtube.js?body=1"></script>
 <script src="/javascripts/vast.js"></script>
 
 <video id="videoplayer" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
-  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+  <!--source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' /-->
+  <!--source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' /-->
 </video>
 
 <script type="text/javascript">
@@ -33,4 +34,11 @@
     }
   };
   vjs("videoplayer", options);
+
+  videojs('videoplayer', { "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ" }).ready(function() {
+    // Cue a video using ended event
+    this.one('ended', function() {
+      this.src('http://www.youtube.com/watch?v=jofNR_WkoCE');
+    });
+  });
 </script>
